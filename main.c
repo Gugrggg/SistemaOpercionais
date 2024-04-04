@@ -1,5 +1,5 @@
-Gustavo Galhardo Rodrigues - 10403091
-Pedro Nogueira Ribeiro - 10324924
+// Gustavo Galhardo Rodrigues - 10403091
+// Pedro Nogueira Ribeiro - 10324924
 
 #define _GNU_SOURCE
 #include <malloc.h> 
