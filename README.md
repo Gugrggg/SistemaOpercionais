@@ -4,7 +4,8 @@ Pedro Nogueira Ribeiro - 10324924
 Como compilar: GCC
 gcc main.c -o main.out
 
-*1. A conta to pode receber mais de uma transferência simultânea;*
+***1. A conta to pode receber mais de uma transferência simultânea;***
+
   void *transferencia(void *arg) { // Função que realiza a transferência de saldo entre contas
   pthread_mutex_lock(&mutex_contas); 
 
@@ -30,8 +31,8 @@ gcc main.c -o main.out
       band = 1;
     }
 
-2. A conta from pode enviar mais de uma transferência simultânea;
-3. A conta from não pode enviar dinheiro se não tiver mais saldo;
+***2. A conta from pode enviar mais de uma transferência simultânea;***
+***3. A conta from não pode enviar dinheiro se não tiver mais saldo;***
 
 if (from.saldo >= valor) { // Verifica se há saldo suficiente para transferência
     from.saldo -= valor; // Reduz o saldo de 'from'
@@ -41,7 +42,7 @@ if (from.saldo >= valor) { // Verifica se há saldo suficiente para transferênc
     printf("Saldo insuficiente para transferência.\n");
 }
 
-4. A conta to pode trocar de ordem com a conta from, ou seja, a conta que enviava pode
+***4. A conta to pode trocar de ordem com a conta from, ou seja, a conta que enviava pode***
 receber e a conta que recebia pode enviar;
 
 if (saldo_from_maior_0_band_igual_0) {
@@ -60,7 +61,7 @@ if (saldo_from_maior_0_band_igual_0) {
     }
 }
 
-5.Poderão ser realizadas até 100 transações simultâneas de transferência
+***5.Poderão ser realizadas até 100 transações simultâneas de transferência***
 
 int main() {
   pthread_t threads_transferencia[100]; // Declara um array de threads para as transferências
