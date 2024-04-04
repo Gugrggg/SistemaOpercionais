@@ -4,7 +4,7 @@ Pedro Nogueira Ribeiro - 10324924
 Como compilar: GCC
 gcc main.c -o main.out
 
-1. A conta to pode receber mais de uma transferência simultânea;
+*1. A conta to pode receber mais de uma transferência simultânea;*
   void *transferencia(void *arg) { // Função que realiza a transferência de saldo entre contas
   pthread_mutex_lock(&mutex_contas); 
 
