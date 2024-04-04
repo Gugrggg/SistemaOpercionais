@@ -32,6 +32,7 @@ gcc main.c -o main.out
     }
 
 ***2. A conta from pode enviar mais de uma transferência simultânea;***
+
 ***3. A conta from não pode enviar dinheiro se não tiver mais saldo;***
 
 if (from.saldo >= valor) { // Verifica se há saldo suficiente para transferência
